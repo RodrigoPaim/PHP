@@ -9,25 +9,15 @@
   <?php
     $string="My name is Rodrigo, Rodrigo is my name";
     
-    // if(preg_match("/Rodrigo/", $string, $array)) {
-    //   echo "It is a match!";
-    //   print_r($array);
-    // }
-    
-    // if(preg_match_all("/Rodrigo/", $string, $array)) {
-    //   print_r($array);
-    // }
-
-    // if(preg_match_all("/Ro(dri)go/", $string, $array)) {
-    //   print_r($array);
-    // }
-    
-    // if(preg_match_all("/Ro(dri)go/", $string, $array)) {
-    //   print_r($array[0][1]);
-    // }
-
-    $string2 = preg_replace("/Ro(dri)go/", "Paim", $string);
-      print_r($string2);
+    // echo preg_match("/Rodrigo/", $string); //true
+    // echo preg_match("/./", $string); //true
+    // echo preg_match("/r|i/", $string); //true
+    // echo preg_match("/r|z/", $string); //true
+    // echo preg_match("/x|z/", $string); //false
+    // echo preg_match("/[ˆabc]/", $string); //true
+    // echo preg_match("/[^My name is Rodrigo, Rodrigo is my name]/", $string); //false
+    // echo preg_match("/[a-z]/", $string); //true
+    // echo preg_match("/[N-O]/", $string); //false
 
 
 ?>
